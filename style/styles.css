@@ -386,7 +386,7 @@ body {
     max-height: 280px;
     min-width: 160px;
     min-height: 90px;
-    display: inline-flex;
+    display: flex;
     margin: 20px auto;
     border: 3px solid #666666;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
