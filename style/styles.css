@@ -676,3 +676,301 @@ body {
 .media-link.instagram::before {
     content: "📸";
 }
+
+/* ===== МЕДИА-ЗАПРОСЫ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ ===== */
+
+/* Планшеты и маленькие ноутбуки */
+@media (max-width: 1024px) {
+    .content {
+        padding: 30px 25px;
+    }
+
+    .header {
+        font-size: 32px;
+        padding: 20px 25px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+/* Планшеты (портретная ориентация) */
+@media (max-width: 768px) {
+    .content {
+        padding: 25px 20px;
+    }
+
+    .header {
+        font-size: 28px;
+        padding: 18px 20px;
+        letter-spacing: 2px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .famq-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .famq-title {
+        font-size: 24px;
+    }
+
+    .famq-name {
+        font-size: 20px;
+    }
+
+    .players-container,
+    .media-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .players-card,
+    .media-partner {
+        padding: 20px;
+    }
+
+    .news-card,
+    .link-card,
+    .act-card {
+        padding: 20px;
+    }
+
+    .news-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .news-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .news-pic:hover {
+        transform: scale(1.2);
+    }
+
+    .media-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-link {
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+/* Мобильные телефоны */
+@media (max-width: 480px) {
+    .content {
+        padding: 20px 15px;
+    }
+
+    .header {
+        font-size: 22px;
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .section-title::after {
+        width: 40px;
+        margin: 10px auto 0;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-link {
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .famq-header {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+
+    .famq-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .famq-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .famq-name {
+        font-size: 18px;
+    }
+
+    .famq-serv {
+        font-size: 14px;
+    }
+
+    .about-famq {
+        padding: 20px 15px;
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    .links-container {
+        margin: 30px 0;
+        gap: 10px;
+    }
+
+    .links-tag {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+
+    .players-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .players-name {
+        font-size: 18px;
+    }
+
+    .players-price {
+        font-size: 13px;
+    }
+
+    .news-title {
+        font-size: 18px;
+    }
+
+    .news-desc,
+    .link-info {
+        font-size: 14px;
+    }
+
+    .act-title {
+        font-size: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+    /* Убираем сложные hover-эффекты на мобильных */
+    .players-card:hover,
+    .media-partner:hover,
+    .news-card:hover,
+    .link-card:hover,
+    .act-card:hover {
+        transform: none;
+    }
+
+    .players-image:hover,
+    .famq-logo:hover,
+    .news-pic:hover {
+        transform: none;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 320px) {
+    .content {
+        padding: 15px 10px;
+    }
+
+    .header {
+        font-size: 18px;
+        padding: 12px 10px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .famq-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .players-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .news-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .header {
+        padding: 15px 20px;
+        font-size: 24px;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .famq-header {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .famq-logo {
+        width: 80px;
+        height: 80px;
+    }
+}
